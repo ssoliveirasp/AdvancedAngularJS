@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Nationality</th>
+        <th>Dates</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="vm in writers">
+        <td>
+            {{vm.Name }}
+        </td>
+        <td>
+            {{ vm.Nationality }}
+        </td>
+        <td>
+            {{ vm.Dates }}
+        </td>
+        <td>
+            <button>Details</button>
+        </td>
+    </tr>
+</table>

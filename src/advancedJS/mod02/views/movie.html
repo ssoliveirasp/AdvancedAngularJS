@@ -1,0 +1,17 @@
+<div ng-controller="movieController">
+    <h2>Movie Name : {{movie}}</h2>
+    <h3>Rating : {{rating}}</h3>
+    <movie-directive movie="movie" rating="{{rating}}" display="display(movie)"></movie-directive>
+</div>
+<pre>
+    <transcludedirective>
+        <span>This is transcluded! {{ movie }}</span>
+    </transcludedirective>
+</pre>
+</div>
+<div ng-controller="movieController">
+    <p>
+        <h2>Lab</h2>
+        <lab-directive writers="writers"></lab-directive>
+    </p>
+</div>

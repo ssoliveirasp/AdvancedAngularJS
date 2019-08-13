@@ -1,0 +1,32 @@
+    <div ng-controller="ngAnimationsCtrl">
+        <div class="container">
+            <h1 class="page-header text-center">Angular Animations Test</h1>
+
+            <form ng-submit="addTodo(newTodo)">
+                <input type="text" ng-model="newTodo" placeholder="New Todo item goes here" class="form-control"
+                    focus />
+            </form>
+
+            <br />
+
+            <div class="list-group">
+                <div class="list-group-item todo-item" ng-repeat="item in items"
+                    ng-class="{ 'todo-complete': item.complete }">
+                    <span class="close" ng-click="removeTodo($index)">&times;</span>
+                    <label>
+                        <input type="checkbox" ng-model="item.complete" />
+                        <span ng-bind="item.text">This is the content of the todo</span>
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn btn-danger btn-block" ng-click="clearAll()">Clear all items</button>
+
+        </div>
+    </div>
+
+    <div class="animCheck">
+        <h1>Hide the DIV: <input type="checkbox" ng-model="myCheck"></h1>
+
+        <div class="animCheck" ng-hide="myCheck"></div>
+    </div>

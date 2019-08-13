@@ -1,0 +1,78 @@
+ 
+.todo-item {
+  transition: background-color 0.3s, color 0.6s;
+}
+.todo-item label {
+  display: block;
+}
+.todo-item.ng-enter {
+  animation: fadeInLeft 1s;
+}
+.todo-item.ng-leave {
+  animation: bounceOut 1s;
+}
+.todo-complete {
+  background-color: #f3f3f3;
+  color: #777;
+}
+.todo-complete label {
+  text-decoration: line-through;
+} 
+
+/* Hide and Show */
+
+.animCheck {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+
+
+
+.animatediv.ng-enter{
+  transition: 0.5s linear opacity;
+  opacity:0;
+}
+.animatediv.ng-enter.ng-enter-active{
+  opacity:1;
+}
+.animatediv.ng-leave{
+  transition: 0.5s linear opacity;
+  opacity:1;
+}
+.animatediv.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.animatediv {
+  opacity:1;
+}
+
+.animatediv.ng-hide {
+  transition: 0.5s linear opacity;
+  opacity: 0;
+}
+
+
+/* sss */
+.full button span {
+  background-color: limegreen;
+  border-radius: 32px;
+  color: black;
+}
+.partially button span {
+  background-color: orange;
+  border-radius: 32px;
+  color: black;
+}
